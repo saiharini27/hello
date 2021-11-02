@@ -1,0 +1,25 @@
+https://github.com/eswar2001/ImageSharing
+8000 and 8001 ports should be used
+client 3000 port
+express package 
+cors package- same origin  should not be their inorder to security issues
+in express- it wiil continue runs the program because development servant environment is created
+get rout-send request to the server
+post rout-encrypt the data
+postman-for api testing/to handle the routs/to test the end points
+post has two fields-reqeust and response
+
+mongodb
+https://downloads.mongodb.com/compass/mongosh-1.1.1-win32-x64.zip
+
+
+express- to create served
+cors-to handle errors from servers
+mongos-package
+fs-file system-nodejs inbuilt
+img is converted from base64 to image-image uri
+mongodb created
+schema designed
+expressjson is used to convert the text into binary
+post rout-
+

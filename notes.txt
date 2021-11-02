@@ -1,1 +1,0 @@
-linked list is also called self referential structure

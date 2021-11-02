@@ -1,0 +1,7 @@
+>> echo command-to write file
+after creating repo link with local file
+git init-
+git redo-
+git revert-
+branch main-
+git origin-
