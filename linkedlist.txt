@@ -1,0 +1,122 @@
+class node:
+    def __init__(self,data):
+        self.data=data
+        self.next=None
+class linkedlist:
+    def __init__(self):
+        self.head=None
+    def eliminate(self,key):
+        temp=self.head
+        if(temp is not None):
+            if(temp.data==key):
+                self.head=temp.next
+                temp=None
+                return
+        while(temp is not None):
+            if temp.data==key:
+                break
+            prev=temp
+            temp=temp.next
+        if(temp==None):
+            return
+        prev.next=temp.next
+        temp=None
+    def deletelist(self):
+        current=self.head
+        while(current):
+            prev=current.next
+            del current.data
+            current=prev
+    def getcount(self):
+        temp=self.head
+        c=0
+        while(temp):
+            c+=1 
+            temp=temp.next
+        print(c)    
+    def printlist(self):
+        temp=self.head
+        while(temp):
+            print(temp.data,"->",end=" ")
+            temp=temp.next
+l=linkedlist()
+l.head=node(1)
+second=node(2)
+third=node(3)
+fourth=node(4)
+fifith=node(5)
+l.head.next=second
+second.next=third
+third.next=fourth
+fourth.next=fifith
+l.printlist()
+print(l.getcount())
+l.eliminate(3)
+l.printlist()
+**************************complete linked list********************************************
+class node:
+    def __init__(self,data):
+        self.data=data
+        self.next=None
+class linkedlist:
+    def __init__(self):
+        self.head=None
+    def eliminate(self,key):
+        temp=self.head
+        if(temp is not None):
+            if(temp.data==key):
+                self.head=temp.next
+                temp=None
+                return
+        while(temp is not None):
+            if temp.data==key:
+                break
+            prev=temp
+            temp=temp.next
+        if(temp==None):
+            return
+        prev.next=temp.next
+        temp=None
+    def deletelist(self):
+        current=self.head
+        while(current):
+            prev=current.next
+            del current.data
+            current=prev
+    def getcount(self):
+        temp=self.head
+        c=0
+        while(temp):
+            c+=1 
+            temp=temp.next
+        return c  
+    def search(self,x):
+        current=self.head
+        while(current!=None):
+            if current.data==x:
+                return True
+            current=current.next    
+        return False    
+    def printlist(self):
+        temp=self.head
+        while(temp):
+            print(temp.data,"->",end=" ")
+            temp=temp.next
+l=linkedlist()
+l.head=node(1)
+second=node(2)
+third=node(3)
+fourth=node(4)
+fifith=node(5)
+l.head.next=second
+second.next=third
+third.next=fourth
+fourth.next=fifith
+l.printlist()
+print(l.getcount())
+l.eliminate(3)
+l.printlist()
+if l.search(2):
+    print("yes")
+else:
+    print("No")
